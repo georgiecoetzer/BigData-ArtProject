@@ -5,7 +5,7 @@ Using Auction Data to explore Art Market Trends
 
 ![Image](https://github.com/user-attachments/assets/f44e391b-f1d5-49fc-bdad-805f4702e5ca)
 
-Project Overview
+Project Overview<br/>
 Art is often a polarizing topic of discussion. Whether you love it or hate it, most ordinary people would agree that the price for art, especially in luxury auction settings, is incomprehensibly high.
 Works of art routinely sell for hundreds of thousands of dollars. In some instances, artworks like Leonardo Da Vinci’s Salvator Mundi can even sell for hundreds of millions of dollars. With this in mind, we sought to investigate what factors might influence the price of artworks at auction?
 Our hypothesis was that the prestige, or the fame/popularity, of an artist would be one of the most significant factors in influencing the price of an artwork. Moreover, the article Are Art Auction Estimates Biased? led us to believe that auction house estimates would be an unreliable metric that undervalues artworks.
@@ -18,10 +18,10 @@ Data visualization
 Data Collection
 
 To gather our data, we used web scrapers we constructed using Selenium, a Python library and tool for automating web browsers to perform a variety of tasks. We chose Selenium because the websites we are scraping data from — Sotheby’s and Christie’s– are dynamic and Selenium provides an easy to understand interface which interacts with websites in a similar manner to the way in which we as humans interact with websites. Selenium, therefore, enabled us to interact with these dynamic websites. Building the web scrapers involved inspecting the web pages to locate the Xpath associated with the relevant filters we wanted to apply and data we wanted to collect and then using Selenium functions to interact with and access these elements
-The functionality of the scrapers can be divided into three parts:
-1.) Collecting the URLs for each auction — We filtered the Auction results to see only Fine Art and Prints/Photographs
-2.)Collect the URLs for each artwork in an auction
-3.)Gather key features, such as price, artists, estimate price… ext for each artwork
+The functionality of the scrapers can be divided into three parts:<br/>
+1.) Collecting the URLs for each auction — We filtered the Auction results to see only Fine Art and Prints/Photographs <br/>
+2.)Collect the URLs for each artwork in an auction<br/>
+3.)Gather key features, such as price, artists, estimate price… ext for each artwork<br/>
 
 ![Image 1](https://github.com/user-attachments/assets/cf2710d4-c6b7-4bf0-bc20-96d6f890f912)
 
