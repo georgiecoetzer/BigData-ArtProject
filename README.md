@@ -1,8 +1,8 @@
-#What makes Art Valuable: Data Scraping and Exploratory Data Visualizations
+# What makes Art Valuable: Data Scraping and Exploratory Data Visualizations
 
-##By Georgie Coetzer, Marcus Ribeiro, Ramiro Storni
+## By Georgie Coetzer, Marcus Ribeiro, Ramiro Storni
 
-##Using Auction Data to explore Art Market Trends
+## Using Auction Data to explore Art Market Trends
 
 
 ![Image](https://github.com/user-attachments/assets/f44e391b-f1d5-49fc-bdad-805f4702e5ca)
