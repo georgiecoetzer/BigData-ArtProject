@@ -8,7 +8,7 @@ Using Auction Data to explore Art Market Trends
 Project Overview<br/>
 Art is often a polarizing topic of discussion. Whether you love it or hate it, most ordinary people would agree that the price for art, especially in luxury auction settings, is incomprehensibly high.
 Works of art routinely sell for hundreds of thousands of dollars. In some instances, artworks like Leonardo Da Vinci’s Salvator Mundi can even sell for hundreds of millions of dollars. With this in mind, we sought to investigate what factors might influence the price of artworks at auction?
-Our hypothesis was that the prestige, or the fame/popularity, of an artist would be one of the most significant factors in influencing the price of an artwork. Moreover, the article Are Art Auction Estimates Biased? led us to believe that auction house estimates would be an unreliable metric that undervalues artworks.
+Our hypothesis was that the prestige, or the fame/popularity, of an artist would be one of the most significant factors in influencing the price of an artwork. Moreover, the article Are Art Auction Estimates Biased? led us to believe that auction house estimates would be an unreliable metric that undervalues artworks.<br />
 
 In our efforts to answer this question we took the following steps:
 Data Collection
