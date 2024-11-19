@@ -10,14 +10,15 @@ Art is often a polarizing topic of discussion. Whether you love it or hate it, m
 Works of art routinely sell for hundreds of thousands of dollars. In some instances, artworks like Leonardo Da Vinci’s Salvator Mundi can even sell for hundreds of millions of dollars. With this in mind, we sought to investigate what factors might influence the price of artworks at auction?
 Our hypothesis was that the prestige, or the fame/popularity, of an artist would be one of the most significant factors in influencing the price of an artwork. Moreover, the article Are Art Auction Estimates Biased? led us to believe that auction house estimates would be an unreliable metric that undervalues artworks.<br />
 
-In our efforts to answer this question we took the following steps:
-Data Collection
-Data Cleaning
-Data Processing
-Data visualization
-Data Collection
+In our efforts to answer this question we took the following steps:<br/>
+Data Collection<br/>
+Data Cleaning<br/>
+Data Processing<br/>
+Data visualization<br/>
+Data Collection<br/>
 
-To gather our data, we used web scrapers we constructed using Selenium, a Python library and tool for automating web browsers to perform a variety of tasks. We chose Selenium because the websites we are scraping data from — Sotheby’s and Christie’s– are dynamic and Selenium provides an easy to understand interface which interacts with websites in a similar manner to the way in which we as humans interact with websites. Selenium, therefore, enabled us to interact with these dynamic websites. Building the web scrapers involved inspecting the web pages to locate the Xpath associated with the relevant filters we wanted to apply and data we wanted to collect and then using Selenium functions to interact with and access these elements
+To gather our data, we used web scrapers we constructed using Selenium, a Python library and tool for automating web browsers to perform a variety of tasks. We chose Selenium because the websites we are scraping data from — Sotheby’s and Christie’s– are dynamic and Selenium provides an easy to understand interface which interacts with websites in a similar manner to the way in which we as humans interact with websites. Selenium, therefore, enabled us to interact with these dynamic websites. Building the web scrapers involved inspecting the web pages to locate the Xpath associated with the relevant filters we wanted to apply and data we wanted to collect and then using Selenium functions to interact with and access these elements.<br/>
+
 The functionality of the scrapers can be divided into three parts:<br/>
 1.) Collecting the URLs for each auction — We filtered the Auction results to see only Fine Art and Prints/Photographs <br/>
 2.)Collect the URLs for each artwork in an auction<br/>
@@ -25,7 +26,7 @@ The functionality of the scrapers can be divided into three parts:<br/>
 
 ![Image 1](https://github.com/user-attachments/assets/cf2710d4-c6b7-4bf0-bc20-96d6f890f912)
 
-Fig 1. Inspecting web elements for a Sotheby’s Auction
+Fig 1. Inspecting web elements for a Sotheby’s Auction<br/>
 Ultimately, we were able to scrape data for 1738 artworks from Sotheby’s auctions and 4525 from Christie’s.
 Data Cleaning:
 The data we collected required significant cleaning before we would be able to use it. As part of the data cleaning process, we had to separate the high and low estimate prices and convert all the prices to a single currency — which we chose to be USD– because the artworks were sold in different countries and so the sale currency differed. Similarly, numeric values such as prices and estimates were initially stored as strings in the dataframes, and names were sometimes formatted differently. Moreover, we had to filter out unwanted art forms such as furniture pieces and sculptures which our scrapers had failed to filter out.
