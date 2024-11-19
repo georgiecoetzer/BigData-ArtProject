@@ -1,6 +1,8 @@
-What makes Art Valuable: Data Scraping and Exploratory Data Visualizations
-By Georgie Coetzer, Marcus Ribeiro, Ramiro Storni
-Using Auction Data to explore Art Market Trends
+#What makes Art Valuable: Data Scraping and Exploratory Data Visualizations
+
+##By Georgie Coetzer, Marcus Ribeiro, Ramiro Storni
+
+##Using Auction Data to explore Art Market Trends
 
 
 ![Image](https://github.com/user-attachments/assets/f44e391b-f1d5-49fc-bdad-805f4702e5ca)
@@ -11,11 +13,11 @@ Works of art routinely sell for hundreds of thousands of dollars. In some instan
 Our hypothesis was that the prestige, or the fame/popularity, of an artist would be one of the most significant factors in influencing the price of an artwork. Moreover, the article Are Art Auction Estimates Biased? led us to believe that auction house estimates would be an unreliable metric that undervalues artworks.<br />
 
 In our efforts to answer this question we took the following steps:<br/>
-Data Collection<br/>
-Data Cleaning<br/>
-Data Processing<br/>
-Data visualization<br/>
-Data Collection<br/>
+1. Data Collection
+2. Data Cleaning<br/>
+3. Data Processing<br/>
+4. Data visualization<br/>
+5. Data Collection<br/>
 
 To gather our data, we used web scrapers we constructed using Selenium, a Python library and tool for automating web browsers to perform a variety of tasks. We chose Selenium because the websites we are scraping data from — Sotheby’s and Christie’s– are dynamic and Selenium provides an easy to understand interface which interacts with websites in a similar manner to the way in which we as humans interact with websites. Selenium, therefore, enabled us to interact with these dynamic websites. Building the web scrapers involved inspecting the web pages to locate the Xpath associated with the relevant filters we wanted to apply and data we wanted to collect and then using Selenium functions to interact with and access these elements.<br/>
 
