@@ -37,7 +37,7 @@ The functionality of the scrapers can be divided into three parts:
 
 Ultimately, we were able to scrape data for 1738 artworks from Sotheby’s auctions and 4525 from Christie’s.
 
-## Data Cleaning:
+## Data Cleaning
 
 The data we collected required significant cleaning before we would be able to use it. As part of the data cleaning process, we had to separate the high and low estimate prices and convert all the prices to a single currency — which we chose to be USD– because the artworks were sold in different countries and so the sale currency differed. Similarly, numeric values such as prices and estimates were initially stored as strings in the dataframes, and names were sometimes formatted differently. Moreover, we had to filter out unwanted art forms such as furniture pieces and sculptures which our scrapers had failed to filter out.
 
@@ -48,7 +48,8 @@ For our data cleaning process, we used pandas data frames and ran a variety of c
 
 **Fig 2. Initial dataframe for Sotheby’s**
 
-## Data Processing:
+## Data Processing
+
 Once we had data that was clean, we chose to add features that we hoped would give us some insight into the pricing of an artwork at auction. Using Pandas Data Frames in conjunction with the beautiful soup and requests libraries as well as the yahoo API we collected the number of yahoo search results for each artist in our dataset. We interpreted this value as an artist’s popularity and believed that if an artist had more search results we might see an increase in an artwork’s price.
 
 We also worked with the existing data to create new features such as artist age, whether an artist is alive, whether or not an artwork sold and whether or not the auction house accurately estimated the price of the artwork.
@@ -65,6 +66,7 @@ In addition to the features we were able to extract from the auction sites, we w
 **Fig 3. Network classified Jackson Pollock’s Number 19 (top) as an Agama Lizard (bottom)**
 
 ## Data Exploration and Visualization
+
 Once we had completed the required data cleaning and processing, we chose to focus our analysis on the data scraped from Christie’s as we struggled to get the Sotheby’s data into a workable format as data for many of the artworks lacked key features.
 Now that we had data, we ran a few exploratory visualizations:
 When we had first started researching auction houses for this project we read that auction houses tended to underestimate the value of their works of art to make the house look better when artworks sold over the estimated price. Here we visualized the percentage of works that sold under, within, and over the estimated prices in a pie chart:
@@ -103,11 +105,13 @@ Surprisingly, the popularity of an artist — which we measured using yahoo sear
 
 **Fig 7. Yahoo search popularity vs sale price**
 
-## Challenges:
+## Challenges
+
 Our biggest challenge in this project was data collection. Prior to this project none of us had ever worked with Selenium before and there was a learning curve that we had to get over before we were able to get started. Even after we understood how to use the library,a lack of uniformity in the auction and artwork sites made it difficult to scrape the same features across auctions and artworks. For the most part, we were able to overcome this using error handling but it slowed us down significantly.<br/>
 The challenges of scraping features consistently across web pages made it difficult for us to narrow our scope to one type of artwork such as paintings or prints, as it was difficult to filter the data we were collecting. This was made worse by the fact that the structure of the webpages prevented us from including medium as a feature. Unfortunately, this issue of scope might have also introduced noise to the data. For example, a print by Picasso will sell for much less than one of his paintings but we do not take that into consideration when comparing the price of an artwork with the artist’s popularity.
 
-## Conclusion:
+## Conclusion
+
 Through our analysis of Christie’s and Sotheby’s auction data, it appears as though the most significant factor influencing the price an artwork will sell for at auction, is the estimates provided by the auction house. Based on this finding, we believe that there may be an anchoring bias which is influencing the buyer’s decision-making. Although the estimates were not wholly accurate in predicting prices it seems as though the selling prices of artworks at auction will be closely correlated to the given auction house estimates.
 
 If you’re interested in learning more about work, you can check out our code and data here!
